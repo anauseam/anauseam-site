@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>This is Anauseam</h1>
+			<p>
+				Anauseam is an educational project started by <em>cam</em> for both public school students
+				and eletrical engineering students. It is a platform where either high school students can
+				learn mathematics in a highly digestible way or eletrical engineering students concepts in
+				an ad nauseam level of detail.
+			</p>
+			<p>Here are the planned ideas for the future </p>
+			<ul>
+				<li>Lessons for middle and high school math fundementals </li>
+				<li>In depth EE lessons, typically pertaining to system and signal analysis and control systems</li>
+				<li>The study of acoustic phenomena</li>
+				<li>Videos as the main means of education</li>
+				<li>Open source projects for topic explination and community contribution</li>
+			</ul>
+			<p>
+				<a href="https://duckduckgo.com/?q=phenomena&ia=web">Join the discord!</a> if I make one.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
